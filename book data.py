@@ -10,5 +10,20 @@ while True:
     
     data_buku.append(buku)
     
-    for books in data_buku:
-        print(f"{books[0]} {books[1]}")
+    print("-"*10, "DATA BUKU", "-"*10)
+    print(f"No\t judul buku \t\t Penulis buku")
+    
+    for index, books in enumerate(data_buku):
+        print(f"{index+1}\t {books[0]}\t\t {books[1]}")
+        
+    
+    islanjut = input("apakah lanjut menginput data (y/n) ? ")
+    
+    if islanjut == "y":
+        continue
+    else:
+        break
+    
+print("Aplikasi selesai !!!")
+        
+    
